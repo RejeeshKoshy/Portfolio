@@ -1,0 +1,176 @@
+/* Define CSS variables for light mode */
+:root {
+    --primary-bg-color: #ffffff;
+    --primary-text-color: #333;
+    --secondary-text-color: #666;
+    --nav-bg-color: #333;
+    --nav-text-color: #fff;
+    --highlight-color: #ff6347;
+    --input-bg-color: #f9f9f9;
+    --input-text-color: #333;
+}
+
+/* Define CSS variables for dark mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-bg-color: #1a1a1a;
+        --primary-text-color: #f9f9f9;
+        --secondary-text-color: #aaa;
+        --nav-bg-color: #222;
+        --nav-text-color: #fff;
+        --highlight-color: #ff6347;
+        --input-bg-color: #333;
+        --input-text-color: #f9f9f9;
+    }
+}
+
+/* Reset browser default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Use Google Fonts */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    color: var(--primary-text-color);
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 20px;
+    color: var(--secondary-text-color);
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: var(--nav-bg-color);
+    color: var(--nav-text-color);
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--nav-text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: var(--highlight-color);
+}
+
+/* Main Content Styling */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--primary-bg-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 5px;
+    background-color: var(--input-bg-color);
+    color: var(--input-text-color);
+}
+
+form input[type="submit"] {
+    background-color: var(--highlight-color);
+    color: var(--nav-text-color);
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: darken(var(--highlight-color), 10%);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: var(--secondary-text-color);
+}
+
+/* Basic Grid Layout for Project and Article lists */
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul li {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: var(--input-bg-color);
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+ul li:hover {
+    background-color: darken(var(--input-bg-color), 10%);
+}
+
+/* Responsive Layout Adjustments */
+@media (max-width: 900px) {
+    ul li {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    ul li {
+        flex: 1 1 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+/* Contact Page Styling */
+ul.contact-info {
+    list-style: none;
+    text-align: center;
+}
+
+ul.contact-info li {
+    margin-bottom: 10px;
+    color: var(--primary-text-color);
+    font-weight: bold;
+}
