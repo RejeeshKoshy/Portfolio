@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rejeesh Koshy - Junior CyberSecurity Analyst</title>
+
+  <meta name="description" content="A professional CV for a Junior CyberSecurity Analyst">
+  <meta name="keywords" content="junior cybersecurity analyst, html, css, javascript, resume">
+
+  <meta property="og:title" content="Rejeesh Koshy - Junior CyberSecurity Analyst">
+  <meta property="og:description" content="A professional CV for a Junior CyberSecurity Analyst">
+  <meta property="og:image" content="path/to/your/profile.jpg">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #2C3E50;
+      color: #ECF0F1;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin: 5px 0;
+    }
+
+    /* Toggle button */
+    #toggle-btn {
+      position: fixed;
+      top: 20px;
+      left: 10px;
+      background-color: #2C3E50;
+      color: #ECF0F1;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    /* Skills sidebar */
+    #skills {
+      position: fixed;
+      top: 0;
+      left: -500px; /* Initially hidden */
+      width: 250px;
+      background-color: #2C3E50;
+      color: white;
+      height: 100vh;
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      transition: left 0.3s; /* Animation for sliding in/out */
+    }
+
+    #skills h2 {
+      border-bottom: 2px solid #fff;
+      padding-bottom: 5px;
+	  color: white;
+    }
+
+    #skills ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    #skills ul li {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+      color: white;
+    }
+
+    /* Main content offset (adjusts when sidebar is visible) */
+    section {
+      margin-left: 20px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      transition: margin-left 0.3s;
+    }
+
+    section h2 {
+      border-bottom: 2px solid #3498DB;
+      color: #2C3E50;
+      padding-bottom: 5px;
+    }
+
+    #contact p {
+      font-size: 1.1em;
+      font-weight: bold;
+      color: #2980B9;
+    }
+
+    .education-item h3 {
+      margin-top: 20px;
+      font-size: 1.4em;
+      color: #2980B9;
+    }
+
+    .education-item p {
+      margin: 5px 0;
+      color: #7F8C8D;
+    }
+
+    footer {
+      background-color: #2C3E50;
+      color: #ECF0F1;
+      text-align: center;
+      padding: 10px;
+    }
+
+    footer h2 {
+      margin: 0;
+      font-size: 1.6em;
+      padding-bottom: 10px;
+    }
+
+    footer ul {
+      padding: 0;
+    }
+
+    footer ul li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    footer ul li a {
+      color: #ECF0F1;
+      text-decoration: none;
+    }
+
+    footer ul li a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rejeesh Koshy</h1>
+    <p>Junior CyberSecurity Analyst</p>
+  </header>
+
+  <!-- Toggle button for showing/hiding the sidebar -->
+  <button id="toggle-btn">☰</button>
+
+  <!-- Skills section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Basic Networking Knowledge</li>
+      <li>Operating System Knowledge</li>
+      <li>Cybersecurity Tools</li>
+      <li>Understanding of Security Concepts</li>
+      <li>Incident Response Skills</li>
+      <li>Problem-Solving and Analytical Thinking</li>
+      <li>Scripting/Automation Skills</li>
+      <li>Ethical Hacking Basics</li>
+      <li>Communication Skills</li>
+      <li>Awareness of Cybersecurity Trends</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>rejeeshkoshy10@gmail.com</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="education-item">
+      <h3>St. Joseph's University, Bangalore</h3>
+      <p>Master's in Computer Application</p>
+      <p>June 2024 to June 2026</p>
+      <ul>
+        <li>Participated in a Hackathon, contributing to the development of a project aimed at simplifying bus transportation by utilizing NFC technology for efficient and contactless fare payments.</li>
+      </ul>
+      <h3>Christ [Deemed To Be University], Bangalore</h3>
+      <p>Bachelor's in Computer Science, Mathematics and Statistics</p>
+      <p>June 2020 to June 2023</p>
+      <ul>
+        <li>Developed a priority-based traffic management system project for emergency vehicles, utilizing traffic signal phasing and simulations to demonstrate effective solutions for real-time traffic flow optimization.</li>
+      </ul>
+      <h3>International Indian School, Ajman, UAE</h3>
+      <p>HHC & SSC</p>
+      <p>2006 to 2020</p>
+      <ul>
+        <li>Secured second place in a mathematics exhibition for an innovative demonstration of 4-dimensional space concepts.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <h2>Across the Internet</h2>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/rejeesh-koshy-55b76212a/">LinkedIn</a></li>
+      <li><a href="https://github.com/RejeeshKoshy">GitHub</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    // JavaScript to toggle the sidebar
+    const toggleBtn = document.getElementById('toggle-btn');
+    const skillsSection = document.getElementById('skills');
+    const mainContent = document.querySelector('section');
+
+    toggleBtn.addEventListener('click', function() {
+      if (skillsSection.style.left === '0px') {
+        skillsSection.style.left = '-300px'; // Slide out
+        mainContent.style.marginLeft = '20px'; // Adjust content when sidebar is hidden
+      } else {
+        skillsSection.style.left = '0'; // Slide in
+        mainContent.style.marginLeft = '270px'; // Adjust content when sidebar is visible
+      }
+    });
+  </script>
+</body>
+</html>
